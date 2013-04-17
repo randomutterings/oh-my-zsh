@@ -9,4 +9,4 @@ function battery_charge {
     echo `batcharge.py` 2>/dev/null
 }
 
-RPROMPT='$(battery_charge) %{$fg_bold[blue]%}%t'
+RPROMPT='$(battery_charge) %{$fg_bold[blue]%}%t%{$reset_color%}'
